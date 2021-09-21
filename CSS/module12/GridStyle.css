@@ -1,0 +1,80 @@
+/* Create Your First CSS Grid */
+/* Add Columns with grid-template-columns */
+/* Add Rows with grid-template-rows */
+/* Use CSS Grid units to Change the Size of Columns and Rows */
+/* Create a Column Gap Using grid-column-gap */
+/* Create a Row Gap using grid-row-gap */
+/* Add Gaps Faster with grid-gap */
+/* Use grid-column to Control Spacing */
+/* Use grid-row to Control Spacing */
+/* Align an Item Horizontally using justify-self */
+/* Align an Item Vertically using align-self */
+/* Align All Items Horizontally using justify-items */
+/* Align All Items Vertically using align-items */
+/* Divide the Grid Into an Area Template */
+/* Place Items in Grid Areas Using the grid-area Property */
+/* Use grid-area Without Creating an Areas Template */
+/* Reduce Repetition Using the repeat Function */
+/* Limit Item Size Using the minmax Function */
+/* Create Flexible Layouts Using auto-fill */
+/* Create Flexible Layouts Using auto-fit */
+.item1{background:LightSkyBlue;}
+.item2 {
+    background:LightSalmon;
+    justify-self: center;
+}
+.item3 {
+    background:PaleTurquoise;
+    align-self: end;
+}
+.item4{background:LightPink;}
+.item5 {
+    background:PaleGreen;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    grid-area: footer; /* 3/1/4/4/ */
+}
+
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+    /*
+    Included in lesson but not needed in code:
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    align-items: end;
+    grid-template-areas:
+        "header header header"
+        "advert content content"
+        "footer footer footer"
+    */
+}
+
+.container2 {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+    /*
+    Included in lesson but not needed in code:
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    align-items: end;
+    grid-template-areas:
+        "header header header"
+        "advert content content"
+        "footer footer footer"
+    */
+}

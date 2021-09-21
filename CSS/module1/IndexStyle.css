@@ -1,0 +1,56 @@
+/* Use CSS Selectors to style Elements */
+/* Specify how Fonts should Degrade */
+h2 {
+    color: blue;
+    font-family: Lobster, monospace;
+}
+
+/* Change the Font Size of an Element */
+/* Set the Font Family of an Element */
+p {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+/* Add Borders around your element */
+/* Add Rounded Corners with "border-radius" */
+/* Make Circular Images with a border-radius */
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-radius: 50%;
+}
+
+/* Use CSS Class to style an Element */
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+/* Size your images */
+.smaller-image {
+    width: 100px;
+}
+
+/* Give a Background Color to a div Element */
+.silver-background {
+    background-color: silver;
+}
+
+/* Use an id Attribute to Style an Element */
+#cat-photo-form {
+    background-color: green;
+}
+
+/* Use Attribute Selectors to Style Elements */
+[type='radio'] {
+    margin: 20px;
+}
+[type='checkbox'] {
+    margin: 10px 0px 15px 0px;
+}

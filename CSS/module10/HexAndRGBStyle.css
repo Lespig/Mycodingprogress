@@ -1,0 +1,49 @@
+/* Use Hex Code for Specific Colors */
+body {
+    background-color: #000000;
+}
+
+/* Use Hex Code to Mix Colors */
+.red-text {
+    color: #FF0000;
+}
+.green-text {
+    color: #00FF00;
+}
+.dodger-blue-text {
+    color: #1E90FF;
+}
+.orange-text {
+    color: #FFA500;
+}
+
+/* Use Abbreviated Hex Code */
+.red-abtext {
+    color: #F00;
+}
+.fuchsia-abtext {
+    color: #F0F;
+}
+.cyan-abtext {
+    color: #0FF;
+}
+.green-abtext {
+    color: #0F0;
+}
+
+/* Use RGB values to Color Elements */
+p {color: rgb(255, 255, 255);}
+
+/* Use RGB to Mix Colors */
+.red-rgbtext {
+    color: rgb(256, 0, 0);
+}
+.orchid-rgbtext {
+    color: rgb(218, 112, 214);
+}
+.sienna-rgbtext {
+    color: rgb(160, 82, 45);
+}
+.blue-rgbtext {
+    color: rgb(0, 0, 255);
+}
