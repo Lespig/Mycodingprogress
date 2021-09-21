@@ -1,0 +1,87 @@
+// Color all paragraphs blue
+<style>
+p {
+    color: blue;
+}
+</style>
+<p>I am blue</p>
+<p class="example">I am also blue</p>
+<p id="last" class="example">I am blue as well</p>
+
+// Color all paragraphs in the "example" class green
+<style>
+p.example {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+</style>
+<p>I am blue</p>
+<p class="example">I am green now</p>
+<p id="last" class="example">I am also green now</p>
+
+// Color paragraphs using ID selector and class selector
+<style>
+p#last {
+    color: red;
+}
+
+p.example {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+</style>
+<p>I am blue</p>
+<p class="example">I am green now</p>
+<p id="last" class="example">And now I am red</p>
+
+// Color in comma tags
+<style>
+h1, h2, h3 {
+    color: blue;
+}
+
+h4, h5, h6 {
+    color: red;
+}
+</style>
+<h1>h1 title</h1>
+<h2>h2 title</h2>
+<h3>h3 title</h3>
+<h4>h4 title</h4>
+<h5>h5 title</h5>
+<h6>h6 title</h6>
+
+// Child Selectors (Ancestor Selector)
+<style>
+.strongblue strong {
+    color: blue;
+}
+</style>
+<p>This is the <strong>first</strong> sentence.</p>
+<p class="strongblue">This is the <strong>second</strong> sentence.</p>
+
+// Child Selectors (Direct Child Selector)
+<style>
+.strongblue > strong {
+    color: blue;
+}
+</style>
+<p>This is the <strong>first</strong> sentence.</p>
+<p class="strongblue">This is the <strong>second</strong> sentence.</p>
+
+// querySelector
+<p class="nice">This is a nice paragraph.</p>
+<p class="nice">This is another nice paragraph.</p>
+<p>This is a standard paragraph.</p>
+
+<script>
+    // this code colors the first nice paragraph in blue
+    var firstNiceParagraph = document.querySelector(".nice");
+    firstNiceParagraph.style.color = "blue";
+</script>

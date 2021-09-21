@@ -1,0 +1,61 @@
+// Defining CSS Inline
+<p>This is the default serif font. It is commonly used in
+printed media for better readability, since letters
+are more distinct in serif fonts.</p>
+
+<p style="font-family: sans-serif">This is a sans-serif font.
+It is commonly used in screens because it is hard
+for screens to render letters with such great detail.</p>
+
+// Defining CSS using a CSS tag
+<!DOCTYPE html>
+<head>
+    <style>
+        .nice {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>This is the default serif font. It is commonly used in
+    printed media for better readability, since letters
+    are more distinct in serif fonts.</p>
+
+    <p class="nice">This is a sans-serif font.
+    It is commonly used in screens because it is hard
+    for screens to render letters with such great detail.</p>
+
+</body>
+
+// Defining CSS using a different stylesheet
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="nice.css">
+</head>
+<body>
+    <p>This is the default serif font. It is commonly used in
+    printed media for better readability, since letters
+    are more distinct in serif fonts.</p>
+
+    <p class="nice">This is a sans-serif font.
+    It is commonly used in screens because it is hard
+    for screens to render letters with such great detail.</p>
+
+</body>
+
+//Defining CSS programmatically
+<!DOCTYPE html>
+<body>
+    <p id="serif-text">This is the default serif font. It is commonly used in
+    printed media for better readability, since letters
+    are more distinct in serif fonts.</p>
+
+    <p class="nice" id="sans-serif-text">This is a sans-serif font.
+    It is commonly used in screens because it is hard
+    for screens to render letters with such great detail.</p>
+
+    <script>
+        var sansSerifText = document.getElementById("sans-serif-text");
+        sansSerifText.style.fontFamily = "sans-serif";
+    </script>
+</body>

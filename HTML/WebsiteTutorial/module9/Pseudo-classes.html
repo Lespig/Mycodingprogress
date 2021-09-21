@@ -1,0 +1,60 @@
+// Links
+<style>
+a.special:link {
+    color: green;
+}
+
+a.special:visited {
+    color: red;
+}
+</style>
+
+<p><a href="#">This is a standard link, it will become purple when clicked</a></p>
+<p><a class="special" href="#">This is a special colored link and become red when clicked</a></p>
+
+// Hover
+<style>
+p:hover {
+    background-color: yellow;
+}
+</style>
+<p>Paragraphs now have a yellow background when hovering over them.</p>
+
+// Active
+<style>
+a:active {
+    font-weight: bold;
+}
+</style>
+<p>
+    <a href="#first">First Section</a>
+    <a href="#second">Second Section</a>
+    <a href="#third">Third Section</a>
+</p>
+
+// Target
+<style>
+p:target {
+    font-weight: bold;
+}
+</style>
+<p>
+    <a href="#first">First Section</a>
+    <a href="#second">Second Section</a>
+    <a href="#third">Third Section</a>
+</p>
+<p id="first">This is the text of the first section.</p>
+<p id="second">This is the text of the second section.</p>
+<p id="third">This is the text of the third section.</p>
+
+// Focus
+<style>
+input:focus {
+    font-weight: bold;
+}
+</style>
+<form>
+    <p><input type="text" value="First field"></p>
+    <p><input type="text" value="Second field"></p>
+    <p><input type="text" value="Third field"></p>
+</form>
